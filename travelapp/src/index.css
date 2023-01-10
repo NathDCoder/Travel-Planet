@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+:root {
+  --primary-dark:#778899;
+  --primary-light: #b8cfce;
+
+}
+
+@layer base {
+  body {
+      @apply font-[Montserrat]
+  }
+
+  li {
+    @apply p-4 font-bold text-lg
+  }
+
+  h1 {
+    @apply text-3xl md:text-4xl font-bold
+  }
+
+  h2 {
+    @apply text-3xl font-bold
+  }
+
+  h3 {
+    @apply text-xl font-bold
+  }
+
+  button {
+    @apply p-3 border bg-gradient-to-r from-[var(--primary-dark)] to-[var(--primary-light)] text-white rounded
+  }
+
+  .icon {
+    @apply text-2xl cursor-pointer
+  }
+}
